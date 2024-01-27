@@ -1,4 +1,9 @@
 package com.jjose.desafio.crud.repositories;
 
-public class CategoryRepository {
+import com.jjose.desafio.crud.domain.category.Category;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface CategoryRepository extends MongoRepository<Category, String>{
+
+
 }
